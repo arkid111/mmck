@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Button</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton">click here</button>
+
+  <script>
+    const btn = document.getElementById('myButton');
+    btn.addEventListener('click', () => {
+      btn.textContent = 'TE SHKUARA VELLA';
+    });
+  </script>
+</body>
+</html>
